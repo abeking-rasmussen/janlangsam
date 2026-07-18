@@ -6,7 +6,6 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Jan Langsam — Pirat, Abeking &amp; Rasmussen, 1962</title>
 <style>
-
   :root{
     --navy: #10222c;
     --navy-deep: #0a161d;
@@ -15,11 +14,8 @@
     --cream: #f4efe4;
     --line: rgba(199,161,90,0.28);
   }
-
   *{ box-sizing:border-box; }
-
   html{ scroll-behavior:smooth; }
-
   body{
     margin:0;
     background:var(--navy-deep);
@@ -27,7 +23,6 @@
     font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     -webkit-font-smoothing:antialiased;
   }
-
   header{
     padding: 6rem 1.5rem 4rem;
     text-align:center;
@@ -36,7 +31,6 @@
       var(--navy);
     border-bottom: 1px solid var(--line);
   }
-
   .eyebrow{
     letter-spacing: 0.22em;
     text-transform: uppercase;
@@ -44,7 +38,6 @@
     color: var(--brass);
     margin: 0 0 1.1rem;
   }
-
   h1{
     font-family: "Fraunces", "Iowan Old Style", Georgia, serif;
     font-weight: 600;
@@ -53,7 +46,6 @@
     margin: 0 0 0.6rem;
     letter-spacing: 0.01em;
   }
-
   .subtitle{
     font-size: 1rem;
     color: rgba(244,239,228,0.72);
@@ -61,7 +53,6 @@
     margin: 0 auto;
     line-height: 1.6;
   }
-
   .rule{
     width: 64px;
     height: 1px;
@@ -69,17 +60,37 @@
     margin: 2rem auto 0;
     opacity: 0.6;
   }
-
+  .ebay-cta{
+    display:inline-flex;
+    align-items:center;
+    gap: 0.5rem;
+    margin-top: 2.2rem;
+    padding: 0.75rem 1.6rem;
+    border: 1px solid var(--brass);
+    border-radius: 999px;
+    color: var(--brass-soft);
+    text-decoration: none;
+    font-size: 0.88rem;
+    letter-spacing: 0.02em;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .ebay-cta:hover{
+    background: var(--brass);
+    color: var(--navy-deep);
+  }
+  .ebay-cta svg{
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
   main{
     max-width: 900px;
     margin: 0 auto;
     padding: 3.5rem 1.25rem 6rem;
   }
-
   figure{
     margin: 0 0 4rem;
   }
-
   figure img{
     display:block;
     width:100%;
@@ -88,7 +99,6 @@
     background: var(--navy);
     box-shadow: 0 20px 50px -25px rgba(0,0,0,0.7);
   }
-
   figcaption{
     display:flex;
     align-items:baseline;
@@ -98,7 +108,6 @@
     font-size: 0.88rem;
     color: rgba(244,239,228,0.62);
   }
-
   figcaption .num{
     font-family: "Fraunces", Georgia, serif;
     font-style: italic;
@@ -106,7 +115,6 @@
     font-size: 0.95rem;
     min-width: 1.6rem;
   }
-
   footer{
     text-align:center;
     padding: 3rem 1.5rem 5rem;
@@ -115,39 +123,44 @@
     font-size: 0.82rem;
     letter-spacing: 0.03em;
   }
-
+  footer a{
+    color: var(--brass);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(199,161,90,0.4);
+  }
+  footer a:hover{
+    border-bottom-color: var(--brass);
+  }
   @media (max-width: 560px){
     header{ padding: 4rem 1.25rem 3rem; }
     main{ padding: 2.5rem 1rem 4rem; }
     figure{ margin-bottom: 3rem; }
   }
-
   @media (prefers-reduced-motion: reduce){
     html{ scroll-behavior:auto; }
   }
-
 </style>
 </head>
 <body>
-
 <header>
   <p class="eyebrow">Abeking &amp; Rasmussen · Baujahr 1962</p>
   <h1>Jan Langsam</h1>
   <p class="subtitle">Weitere Bilder zur Piraten-Jolle — Deck, Rumpf, Segel und Zubehör.</p>
   <div class="rule"></div>
+  <a class="ebay-cta" href="https://www.ebay.de/itm/278194409960" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
+    Zur eBay-Anzeige
+  </a>
 </header>
-
 <main id="gallery"></main>
-
 <footer>
-  Private Bildergalerie · nicht öffentlich gelistet
+  Private Bildergalerie · nicht öffentlich gelistet<br>
+  <a href="https://www.ebay.de/itm/278194409960" target="_blank" rel="noopener">Zurück zur eBay-Anzeige</a>
 </footer>
-
 <script>
-  // Trage hier einfach den Dateinamen jedes Bildes ein (liegt im Ordner "images/").
+  // Trage hier einfach den Dateinamen jedes Bildes ein (liegt im Ordner "images_web/").
   // Reihenfolge der Liste = Reihenfolge auf der Seite.
   // Optional: Text hinter dem Komma ist die Bildunterschrift (kann auch leer bleiben: "").
-
   const bilder = [
     ["top_IMG_10.jpeg", ""],
     ["top_IMG_15.jpeg", ""],
@@ -230,17 +243,13 @@
     ["top_IMG_234.jpeg", ""],
     ["top_IMG_235.jpeg", ""],
   ];
-
   const gallery = document.getElementById('gallery');
-
   bilder.forEach(([datei, text], i) => {
     const fig = document.createElement('figure');
-
     const img = document.createElement('img');
     img.src = 'images_web/' + datei;
     img.loading = 'lazy';
     img.alt = text || datei;
-
     const cap = document.createElement('figcaption');
     const num = document.createElement('span');
     num.className = 'num';
@@ -251,12 +260,10 @@
       txt.textContent = text;
       cap.appendChild(txt);
     }
-
     fig.appendChild(img);
     fig.appendChild(cap);
     gallery.appendChild(fig);
   });
 </script>
-
 </body>
 </html>
