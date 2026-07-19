@@ -83,10 +83,89 @@
     height: 14px;
     flex-shrink: 0;
   }
+
+  /* ---- Angebotstext ---- */
+  .listing{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4.5rem 1.5rem 1rem;
+  }
+  .listing .tagline{
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    color: var(--brass-soft);
+    line-height: 1.5;
+    margin: 0 0 1.75rem;
+  }
+  .listing p{
+    line-height: 1.75;
+    font-size: 0.98rem;
+    color: rgba(244,239,228,0.82);
+    margin: 0 0 1.4rem;
+  }
+  .listing strong{
+    color: var(--cream);
+    font-weight: 700;
+  }
+  .listing .photo-note{
+    border-left: 2px solid var(--brass);
+    padding: 0.2rem 0 0.2rem 1rem;
+    font-style: italic;
+    color: var(--brass-soft);
+    margin: 0 0 2rem;
+  }
+  .listing h2{
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--brass);
+    font-weight: 700;
+    margin: 2.75rem 0 1.1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+  .listing h2:first-of-type{
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+  .listing ul{
+    margin: 0 0 1.5rem;
+    padding-left: 1.15rem;
+  }
+  .listing li{
+    line-height: 1.65;
+    font-size: 0.98rem;
+    color: rgba(244,239,228,0.82);
+    margin-bottom: 0.65rem;
+  }
+  .listing .note{
+    font-size: 0.9rem;
+    color: rgba(244,239,228,0.6);
+    margin: 0 0 1.5rem;
+  }
+  .listing .divider-rule{
+    width: 48px;
+    height: 1px;
+    background: var(--brass);
+    opacity: 0.5;
+    margin: 3rem auto;
+  }
+
   main{
     max-width: 900px;
     margin: 0 auto;
-    padding: 3.5rem 1.25rem 6rem;
+    padding: 1rem 1.25rem 6rem;
+  }
+  .gallery-heading{
+    text-align:center;
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic;
+    color: var(--brass-soft);
+    font-size: 1.3rem;
+    margin: 0 0 3rem;
   }
   figure{
     margin: 0 0 4rem;
@@ -133,7 +212,8 @@
   }
   @media (max-width: 560px){
     header{ padding: 4rem 1.25rem 3rem; }
-    main{ padding: 2.5rem 1rem 4rem; }
+    .listing{ padding: 3rem 1.1rem 0.5rem; }
+    main{ padding: 0.5rem 1rem 4rem; }
     figure{ margin-bottom: 3rem; }
   }
   @media (prefers-reduced-motion: reduce){
@@ -152,17 +232,69 @@
     Zur eBay-Anzeige
   </a>
 </header>
-<main id="gallery"></main>
+
+<section class="listing">
+  <p class="tagline">Schweren Herzens trennen wir uns von unserem geliebten Piraten „Jan Langsam": ein echtes Stück deutscher Bootsbaugeschichte sucht neue Segler!</p>
+
+  <p>Zum Verkauf steht „Jan Langsam", eine klassische Piraten-Jolle aus Vollholz, gebaut 1962 bei <strong>Abeking &amp; Rasmussen</strong> in Lemwerder. A&amp;R hat insgesamt nur 534 Holzpiraten gebaut und ist bis heute einer der renommiertesten Werften Deutschlands, die für höchste Bootsbaukunst steht; jeder einzelne ist heute ein gesuchter Klassiker. Segelnummer: <strong>G 2030</strong>.</p>
+
+  <p>Wir haben das Boot 2010 erworben und seither mit viel Liebe, fachmännischer Unterstützung und erheblichem Aufwand gepflegt und instand gehalten. Leider fehlt uns inzwischen schlicht die Zeit zum Segeln, deshalb soll unser Pirat nun in gute Hände abgegeben werden.</p>
+
+  <p><strong>Zum Preis:</strong> Er ist bewusst nicht am unteren Ende angesetzt und verhandelbar. Uns ist wichtig, dass „Jan Langsam" in Hände kommt, die wissen, was ein Vollholz-Pirat von Abeking &amp; Rasmussen wert ist.</p>
+
+  <p class="photo-note">📷 Bei Interesse sende ich gerne weitere Detailfotos über die eBay-Nachrichtenfunktion zu.</p>
+
+  <h2>Zustand &amp; durchgeführte Arbeiten (durch Bootsbauer, dokumentiert mit Rechnungen und Fotos)</h2>
+  <ul>
+    <li><strong>Kompletter neuer Lackaufbau</strong> von Rumpf und Deck (vor wenigen Jahren): Deck und Rumpf abgezogen, ca. 11 m Decksnähte aufgefräst und dauerelastisch verfugt</li>
+    <li><strong>Unterwasserschiff</strong> abgeschliffen, ca. 50 m Plankennaht ausgefräst und dauerelastisch verfugt, anschließend mit Dünnschicht-Antifouling <strong>International VC 17m Extra</strong> (Graphit) behandelt. Hinweis: Dieses Produkt wurde 2024 EU-weit vom Markt genommen und darf in Binnengewässern nicht mehr neu aufgetragen werden – für die nächste Auffrischung empfiehlt sich ein biozidfreies Nachfolgeprodukt (z. B. Yachtcare Protector Hard)</li>
+    <li><strong>Schwertkasten</strong> komplett neu angefertigt und montiert</li>
+    <li><strong>Neuer Großbaum</strong></li>
+    <li><strong>Mast</strong> komplett abgeschliffen und neu lackiert, Risse fachmännisch verleimt, Beschläge neu montiert, Groß- und Fockfall erneuert</li>
+    <li><strong>Neuer Ruderkopf</strong> angefertigt, Pinne und Ausleger neu lackiert. Die Ruderanlage ist makellos und voll funktionsfähig</li>
+    <li><strong>Neue Scheuerleiste</strong> angefertigt und dauerelastisch verklebt</li>
+    <li>Lackierung mit hochwertigem <strong>Owatrol-System</strong></li>
+    <li><strong>Kiel</strong> laut Bootsbauer in sehr gutem Zustand</li>
+    <li><strong>Wanten</strong> rostfrei und intakt</li>
+  </ul>
+
+  <h2>Ausstattung</h2>
+  <ul>
+    <li><strong>Großsegel, Vorsegel und Spinnaker.</strong> Alle Segel sauber und intakt</li>
+    <li>Komplette Takelage</li>
+    <li>Schwert ebenfalls gestrichen, im Unterwasserbereich mit VC behandelt</li>
+    <li><strong>Originale Persenning</strong> aus Leinen in Gelb, mit der Segelnummer G-2030 bedruckt. Altersbedingt etwas ausgeblichen und mit vereinzelten Stockflecken, funktional aber weiterhin einsatzbereit</li>
+    <li>Der <strong>Straßentrailer</strong> wird aktuell zum TÜV gebracht und straßenfertig übergeben</li>
+    <li>Umfangreiche <strong>Dokumentation der Restaurierung</strong> inkl. Fotos und Werkstattunterlagen</li>
+  </ul>
+
+  <p class="note">Hinweis: Die ursprünglichen Spischot-Umlenkrollen und Klampen wurden im Zuge der Decksrestaurierung demontiert (Löcher fachgerecht verpfropft). Sie können bei Bedarf problemlos wieder nachgerüstet werden.</p>
+
+  <p><strong>Das Boot ist segelfertig!</strong> Einsteigen, aufriggen, lossegeln: „Jan Langsam" segelt wunderschön (und schneller, als sein Name vermuten lässt!), ist stabil und gutmütig und eignet sich perfekt für entspannte Törns zu zweit ebenso wie für sportliches Jollensegeln. Ein Boot, das am Steg garantiert Blicke auf sich zieht.</p>
+
+  <h2>Besichtigung</h2>
+  <p>Eine Besichtigung in <strong>23715 Bosau</strong> (am Großen Plöner See, Schleswig-Holstein) ist jederzeit nach Absprache möglich und ausdrücklich erwünscht! Überzeugen Sie sich selbst vom Zustand dieses Klassikers.</p>
+
+  <h2>Rechtliches (Privatverkauf)</h2>
+  <p>Es handelt sich um einen Privatverkauf. Der Verkauf erfolgt unter Ausschluss jeglicher Sachmängelhaftung/Gewährleistung. Das Boot wird verkauft wie besichtigt bzw. wie beschrieben. Keine Rücknahme, kein Umtausch. Alle Angaben erfolgen nach bestem Wissen und Gewissen. Abholung durch den Käufer.</p>
+
+  <div class="divider-rule"></div>
+</section>
+
+<main id="gallery">
+  <p class="gallery-heading">Bildergalerie</p>
+</main>
+
 <footer>
   Private Bildergalerie · nicht öffentlich gelistet<br>
   <a href="https://www.ebay.de/itm/278194409960" target="_blank" rel="noopener">Zurück zur eBay-Anzeige</a>
 </footer>
+
 <script>
-  // Trage hier einfach den Dateinamen jedes Bildes ein (liegt im Ordner "images_web/").
-  // Reihenfolge der Liste = Reihenfolge auf der Seite.
-  // Optional: Text hinter dem Komma ist die Bildunterschrift (kann auch leer bleiben: "").
   const bilder = [
     ["top_IMG_10.jpeg", ""],
+    ["top_IMG_178.jpeg", ""],
+    ["00_Messbrief.jpeg", ""],
     ["top_IMG_15.jpeg", ""],
     ["top_IMG_27.jpeg", ""],
     ["top_IMG_28.jpeg", ""],
@@ -216,7 +348,6 @@
     ["top_IMG_172.jpeg", ""],
     ["top_IMG_174.jpeg", ""],
     ["top_IMG_175.jpeg", ""],
-    ["top_IMG_178.jpeg", ""],
     ["top_IMG_184.jpeg", ""],
     ["top_IMG_186.jpeg", ""],
     ["top_IMG_189.jpeg", ""],
